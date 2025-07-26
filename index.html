@@ -292,7 +292,7 @@
     async function fetchRealTimeData(symbol) {
       console.log(`Fetching data for ${symbol}...`);
       try {
-        const response = await fetch(`http://localhost:5000/api/option-chain/${symbol}`);
+        const response = await fetch(`https://your-live-backend.com/api/option-chain/${symbol}`);
         if (!response.ok) {
           throw new Error(`API request failed with status ${response.status}`);
         }
